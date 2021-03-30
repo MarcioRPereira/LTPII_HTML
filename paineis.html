@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <!--CDN: Content Delivery Network-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/76ead412be.js" crossorigin="anonymous"></script>
+    <title>Paineis!</title>
+</head>
+
+<body class="container">
+    <nav id="navbarExemplo" class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">LTP2</a>
+
+        <div class="collapse navbar-collapse" id="conteudosNavbar">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#jumbotronExemplo">Jumbotron</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#paineis">Paineis</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#cardAccordion">Accordion</a>
+                </li>
+            </ul>
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+        </div>
+    </nav>
+    <div data-spy="scroll" data-target="#navbarExemplo" data-offset="0">
+        <div id="carrosel" class="carousel slide bg-dark" data-ride="carousel" style="text-align: center;">
+            <ol class="carousel-indicators">
+                <li data-target="#carrosel" data-slide-to="0" class="active"></li>
+                <li data-target="#carrosel" data-slide-to="1"></li>
+                <li data-target="#carrosel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-interval="5000">
+                    <img src="imagens/img01.jpg" width="800px" height="350px">
+                </div>
+                <div class="carousel-item" data-interval="5000">
+                    <img src="imagens/img02.jpg" width="800px" height="350px">
+                </div>
+                <div class="carousel-item" data-interval="5000">
+                    <img src="imagens/img03.jpg" width="800px" height="350px">
+                </div>
+            </div>
+            <a class=carousel-control-prev href="#carrosel" role="button" data-slide="prev">
+                <span class="fas fa-arrow-circle-left fa-4x"></span>
+            </a>
+            <a class=carousel-control-next href="#carrosel" role="button" data-slide="next">
+                <span class="fas fa-arrow-circle-right fa-4x"></span>
+            </a>
+        </div>
+        <div id="jumbotronExemplo" class="jumbotron">
+            <h2>Painéis</h2>
+        </div>
+
+
+        <br>
+        <div id="paineis" class="row">
+            <div class="col col-4">
+                <div class="card">
+                    <img src="imagens/sistemas.jpg" class="card-img-top" height="232px"
+                        alt="imagem símbolo de sistemas de informação">
+                    <div class="card-body">
+                        <h5 class="card-title">Painel 1</h5>
+                        <p class="card-text">Texto do painél. Este texto será formatado de forma específica</p>
+                        <a href="#" class="card-link">Home</a>
+                        <a href="www.unilago.edu.br" class="card-link">Unilago</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-4">
+                <div class="card bg-dark text-light">
+                    <h5 class="card-header">Título 2</h5>
+                    <img src="imagens/si2.png" class="card-img-top" height="232px"
+                        alt="imagem símbolo de sistemas de informação">
+                    <div class="card-body">
+                        <h5 class="card-title">Painel 2</h5>
+                        <p class="card-text">Texto do painél. Este texto será formatado de forma específica</p>
+                        <a href="#" class="btn btn-primary">Home</a>
+                        <a href="www.unilago.edu.br" class="btn btn-primary">Unilago</a>
+                    </div>
+                    <div class="card-footer">
+                        rodapé
+                    </div>
+                </div>
+            </div>
+            <div class="col col-4">
+                <div class="card">
+                    <div class="card-header">
+                        Título
+                    </div>
+                    <img src="imagens/si3.webp" class="card-img-top" height="232px"
+                        alt="imagem símbolo de sistemas de informação">
+                    <div class="card-body">
+                        <h5 class="card-title">Painel 3</h5>
+                        <p class="card-text">Texto do painél. Este texto será formatado de forma específica</p>
+                        <a href="#" class="card-link">Home</a>
+                        <a href="http://www.unilago.edu.br" class="card-link">Unilago</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="accordion" id="cardAccordion">
+            <div class="card">
+                <div class="card-header" id="headCard1">
+                    <h3>
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#bodyCard1">
+                            Card 1
+                        </button>
+                    </h3>
+                </div>
+                <div id="bodyCard1" class="collapse show" data-parent="#cardAccordion">
+                    <div class="card-body">
+                        <p class="card-text">Texto do primeiro card <br> Segunda linha</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headCard2">
+                    <h3>
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#bodyCard2">
+                            Card 2
+                        </button>
+                    </h3>
+                </div>
+                <div id="bodyCard2" class="collapse" data-parent="#cardAccordion">
+                    <div class="card-body">
+                        <p class="card-text">Texto do segundo card <br> Segunda linha</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headCard3">
+                    <h3>
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#bodyCard3">
+                            Card 3
+                        </button>
+                    </h3>
+                </div>
+                <div id="bodyCard3" class="collapse" data-parent="#cardAccordion">
+                    <div class="card-body">
+                        <p class="card-text">Texto do terceiro card <br> Segunda linha</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+
+        <form>
+            <h4>Contato:</h4>
+            <div class="form-check form-check-inline">
+                <input id="rbt01" class="form-check-input" type="radio" name="botaoRadio" value="pessoaFisica" checked>
+                <label class="form-check-label" for="rbt01">Pessoa Física</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input id="rbt02" class="form-check-input" type="radio" name="botaoRadio" value="pessoaJuridica">
+                <label class="form-check-label" for="rbt02">Pessoa Juridica</label>
+            </div>
+            <div class="form-group">
+                <label for="txtNome">Nome:</label>
+                <input id="txtNome" class="form-control" type="text">
+            </div>
+            <div class="form-group">
+                <label for="txtEmail">E-mail:</label>
+                <input id="txtEmail" class="form-control" type="email">
+                <small id="sobreEmail" class="form-text text-muted">Informe seu e-mail de contato</small>
+            </div>
+            <div class="form-group">
+                <label for="selAssunto">Assunto:</label>
+                <select id="selAssunto" class="form-control">
+                    <option>Dúvidas</option>
+                    <option>Comercial</option>
+                    <option>Sugestões / Reclamações</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="txtMensagem">Mensagem:</label>
+                <textarea id="txtMensagem" class="form-control" rows="5"></textarea>
+            </div>
+        </form>
+
+    </div>
+</body>
+
+</html>
